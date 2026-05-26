@@ -1,3 +1,35 @@
 {
+<<<<<<< HEAD
   "devDependencies": {}
 }
+=======
+  "name": "md-tanvir-portfolio",
+  "version": "2.0.0",
+  "description": "Professional portfolio website of Md Tanvir Arabi - Full Stack Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server .",
+    "dev": "live-server . --port=3000",
+    "build": "echo 'No build step required for static portfolio.'"
+  },
+  "keywords": [
+    "portfolio",
+    "full-stack",
+    "developer",
+    "web-development",
+    "react",
+    "node",
+    "responsive"
+  ],
+  "author": "Md Tanvir Arabi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/portfolio"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
+>>>>>>> 9f643b9 (Update portfolio code and styles)

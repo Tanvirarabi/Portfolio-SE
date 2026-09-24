@@ -1,35 +1,33 @@
 {
-<<<<<<< HEAD
-  "devDependencies": {}
-}
-=======
-  "name": "md-tanvir-portfolio",
-  "version": "2.0.0",
-  "description": "Professional portfolio website of Md Tanvir Arabi - Full Stack Developer",
-  "main": "index.html",
-  "scripts": {
-    "start": "live-server .",
-    "dev": "live-server . --port=3000",
-    "build": "echo 'No build step required for static portfolio.'"
-  },
-  "keywords": [
-    "portfolio",
-    "full-stack",
-    "developer",
-    "web-development",
-    "react",
-    "node",
-    "responsive"
-  ],
-  "author": "Md Tanvir Arabi",
+  "name": "md-tanvir-arabi-portfolio",
+  "private": true,
+  "version": "3.0.0",
+  "description": "Portfolio of Md Tanvir Arabi, Software Engineer (AI/ML) — built with React and Vite.",
+  "type": "module",
+  "author": "Md Tanvir Arabi <tanvirarabi8@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/portfolio"
+    "url": "https://github.com/Tanvirarabi/Portfolio-SE.git"
   },
-  "dependencies": {},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-icons": "^5.7.0"
+  },
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "@eslint/js": "^10.0.1",
+    "@vitejs/plugin-react": "^6.1.1",
+    "eslint": "^10.11.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.12.0",
+    "vite": "^8.3.1"
   }
 }
->>>>>>> 9f643b9 (Update portfolio code and styles)

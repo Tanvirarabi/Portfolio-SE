@@ -1,0 +1,126 @@
+.research__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 20px;
+}
+
+.paper {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(24px, 4vw, 36px);
+  border-color: color-mix(in srgb, var(--accent) 30%, var(--border));
+  background: linear-gradient(150deg, var(--accent-soft), transparent 55%), var(--surface);
+}
+
+.paper__watermark {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  color: var(--accent);
+  font-size: 5.5rem;
+  opacity: 0.07;
+  transform: rotate(-10deg);
+  pointer-events: none;
+}
+
+.paper__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.paper__title {
+  font-size: clamp(1.2rem, 2.4vw, 1.5rem);
+  line-height: 1.35;
+}
+
+.paper__venue {
+  margin-top: 16px;
+  color: var(--text-muted);
+}
+
+.paper__host {
+  margin-top: 4px;
+  color: var(--text-faint);
+  font-size: 0.9rem;
+}
+
+.paper__actions {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.training {
+  padding: clamp(24px, 4vw, 32px);
+}
+
+.training__head {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.training__icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: var(--warm-soft);
+  color: var(--warm);
+  font-size: 1.15rem;
+}
+
+.training__provider {
+  color: var(--warm);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.training__title {
+  margin-top: 4px;
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+.training__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.link-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.link-chip svg {
+  font-size: 0.65rem;
+}
+
+.link-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 960px) {
+  .research__grid {
+    grid-template-columns: 1fr;
+  }
+}

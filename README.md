@@ -3,6 +3,8 @@
 Personal portfolio of **Md Tanvir Arabi**, Software Engineer (AI/ML) at Datasoft Manufacturing & Assembly Limited, Dhaka.
 Built with **React 19** and **Vite**, with content taken from my CV.
 
+**Live site:** https://tanvirarabi.github.io/Portfolio-SE/
+
 ## Features
 
 - **Sections:** hero, about with animated stats, experience timeline, filterable projects, skills, publication and training, education, and contact.
@@ -51,10 +53,14 @@ To deliver messages straight to your inbox instead:
 
 ## Deployment
 
-`npm run build` produces a static site in `dist/` that works on any static host. Asset paths are relative, so it also works from a sub-path such as GitHub Pages.
+Every push to `main` builds the site and publishes it to GitHub Pages through [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+You can also run it by hand from the **Actions** tab.
 
-- **Netlify or Vercel:** import the repository. Use `npm run build` as the build command and `dist` as the output folder.
-- **GitHub Pages:** build the site and publish the `dist/` folder, for example with the official *Deploy to GitHub Pages* action.
+One-time setup: in **Settings → Pages**, set **Source** to **GitHub Actions**.
+
+To send contact-form messages straight to your inbox, add a repository secret named `VITE_WEB3FORMS_KEY` under **Settings → Secrets and variables → Actions**.
+
+`npm run build` also produces a static site in `dist/` that works on any other static host, such as Netlify or Vercel.
 
 ## Project structure
 
